@@ -10,16 +10,16 @@
     <h1>Cadastro de Fornecedores</h1>
       <form action="">
             <div>
-                <label for="idempresa">Empresa:</label><br>
-                <input type="text" id="idempresa" name="idempresa" placeholder="Digite a empresa"/><br>
+                <label for="idEmpresa">Empresa:</label><br>
+                <input type="text" id="idEmpresa" name="idEmpresa" placeholder="Digite a empresa"/><br>
             </div>
             <div>
-                <label for="idcontato">Contato:</label><br>
-                <input type="text" id="idcontato" name="idcontato" placeholder="Digite o Contato"/><br>
+                <label for="idContato">Contato:</label><br>
+                <input type="text" id="idContato" name="idContato" placeholder="Digite o Contato"/><br>
             </div>
             <div>
-                <label for="idpais">País:</label><br>
-                <input type="text" id="idpais" name="idpais" placeholder="Digite o Pais"/><br>
+                <label for="idPais">País:</label><br>
+                <input type="text" id="idPais" name="idPais" placeholder="Digite o Pais"/><br>
             </div>
             <br>
             <div>
@@ -35,36 +35,30 @@
                 <th>Country</th>
         </tr>
         </table>
-
     <script>
         function cadastrarFornecedor(event) {
             event.preventDefault()
-            var idempresa = document.getElementById("idempresa").value;
-            var idcontato = document.getElementById("idcontato").value;
-            var idpais = document.getElementById("idpais").value;
+            var idEmpresa = document.getElementById("idEmpresa").value;
+            var idContato = document.getElementById("idContato").value;
+            var idPais = document.getElementById("idPais").value;
 
             var tabela = document.getElementById("tabelaFornecedores");
             var novaLinha = tabela.insertRow(-1);
 
             var colunaNome = novaLinha.insertCell(0);
-            colunaNome.innerHTML = idempresa;
+            colunaNome.innerHTML = idEmpresa;
 
             var colunaProduto = novaLinha.insertCell(1);
-            colunaProduto.innerHTML = idcontato;
+            colunaProduto.innerHTML = idContato;
 
-            var colunaProduto = novaLinha.insertCell(1);
-            colunaProduto.innerHTML = idpais;
+            var colunaProduto2 = novaLinha.insertCell(2);
+            colunaProduto2.innerHTML = idPais;
 
-            document.getElementById("idempresa").value=''
-            document.getElementById("idcontato").value=''
-            document.getElementById("idpais").value=''
+            document.getElementById("idEempresa").value;
+            document.getElementById("idContato").value=''
+            document.getElementById("idPais").value=''
         }
     </script>
-
-
-
-
-
 </main>
 </body>
 </html>
