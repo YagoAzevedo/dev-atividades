@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+</head>
+<body>
+<main>
+    <h1>Cadastro de Fornecedores</h1>
+      <form action="">
+            <div>
+                <label for="idempresa">Empresa:</label><br>
+                <input type="text" id="idempresa" name="idempresa" placeholder="Digite a empresa"/><br>
+            </div>
+            <div>
+                <label for="idcontato">Contato:</label><br>
+                <input type="text" id="idcontato" name="idcontato" placeholder="Digite o Contato"/><br>
+            </div>
+            <div>
+                <label for="idpais">País:</label><br>
+                <input type="text" id="idpais" name="idpais" placeholder="Digite o Pais"/><br>
+            </div>
+            <br>
+            <div>
+                <button onclick="cadastrarFornecedor(event)">Cadastrar</button>
+            </div>
+      </form>  
+
+      <h2>Fornecedores Cadastrados</h2>
+        <table border="1" id="tabelaFornecedores">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+        </tr>
+        </table>
+
+    <script>
+        function cadastrarFornecedor(event) {
+            event.preventDefault()
+            var idempresa = document.getElementById("idempresa").value;
+            var idcontato = document.getElementById("idcontato").value;
+            var idpais = document.getElementById("idpais").value;
+
+            var tabela = document.getElementById("tabelaFornecedores");
+            var novaLinha = tabela.insertRow(-1);
+
+            var colunaNome = novaLinha.insertCell(0);
+            colunaNome.innerHTML = idempresa;
+
+            var colunaProduto = novaLinha.insertCell(1);
+            colunaProduto.innerHTML = idcontato;
+
+            var colunaProduto = novaLinha.insertCell(1);
+            colunaProduto.innerHTML = idpais;
+
+            document.getElementById("idempresa").value=''
+            document.getElementById("idcontato").value=''
+            document.getElementById("idpais").value=''
+        }
+    </script>
+
+
+
+
+
+</main>
+</body>
+</html>
