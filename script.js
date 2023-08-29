@@ -1,22 +1,22 @@
 function cadastrarFornecedor(event) {
     event.preventDefault()
-    var idEmpresa = document.getElementById("idEmpresa").value;
-    var idContato = document.getElementById("idContato").value;
-    var idPais = document.getElementById("idPais").value;
+    const nomeEmpresa = document.getElementById("nomeEmpresa").value;
+    const nomeContato = document.getElementById("nomeContato").value;
+    const nomePais = document.getElementById("nomePais").value;
 
-    var tabela = document.getElementById("tabelaFornecedores");
-    var novaLinha = tabela.insertRow(-1);
+    const tabela = document.getElementById("tabelaFornecedores");
+    const novaLinha = tabela.insertRow(-1);
 
-    var colunaNome = novaLinha.insertCell(0);
-    colunaNome.innerHTML = idEmpresa;
+    const colunaNome = novaLinha.insertCell(0);
+    colunaNome.innerHTML = nomeEmpresa;
 
-    var colunaProduto = novaLinha.insertCell(1);
-    colunaProduto.innerHTML = idContato;
+    const colunaProduto = novaLinha.insertCell(1);
+    colunaProduto.innerHTML = nomeContato;
 
-    var colunaProduto2 = novaLinha.insertCell(2);
-    colunaProduto2.innerHTML = idPais;
+    const colunaProduto2 = novaLinha.insertCell(2);
+    colunaProduto2.innerHTML = nomePais;
 
-    document.getElementById("idEempresa").value=''
-    document.getElementById("idContato").value=''
-    document.getElementById("idPais").value=''
+    document.getElementById("nomeEmpresa").value=''
+    document.getElementById("nomeContato").value=''
+    document.getElementById("nomePais").value=''
 }
