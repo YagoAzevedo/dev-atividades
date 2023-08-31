@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+</head>
+<body>
+<main>
+    <h1>Cadastro de Fornecedores</h1>
+      <form action="">
+            <div>
+                <label for="nomeEmpresa">Empresa:</label><br>
+                <input type="text" id="nomeEmpresa" name="nomeEmpresa" placeholder="Digite a empresa"/><br>
+            </div>
+            <div>
+                <label for="nomeContato">Contato:</label><br>
+                <input type="text" id="nomeContato" name="nomeContato" placeholder="Digite o Contato"/><br>
+            </div>
+            <div>
+                <label for="nomePais">País:</label><br>
+                <input type="text" id="nomePais" name="nomePais" placeholder="Digite o Pais"/><br>
+            </div>
+            <br>
+            <div>
+                <button onclick="cadastrarFornecedor(event)">Cadastrar</button>
+            </div>
+      </form>  
+
+      <h2>Fornecedores Cadastrados</h2>
+        <table border="1" id="tabelaFornecedores">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+        </tr>
+        </table>
+</main>
+<script src="./script.js"></script>
+</body>
+</html>
