@@ -4,6 +4,12 @@ function cadastrarFornecedor(event) {
     const nomeContato = document.getElementById("nomeContato").value;
     const nomePais = document.getElementById("nomePais").value;
 
+    if (
+        nomeEmpresa.trim() === '' || nomeContato.trim() === '' || nomePais.trim() === '') {
+            alert('Por favor, preencha todos os campos antes de cadastrar.');
+            return; 
+             }
+
     const tabela = document.getElementById("tabelaFornecedores");
     const novaLinha = tabela.insertRow(-1);
 
