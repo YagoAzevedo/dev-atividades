@@ -48,12 +48,13 @@ form{
 select {
   color: #777
 }
-select:invalid {
-  border-color: red;
-}
 input:invalid {
- border-color: red; 
+ border-color: red;
 }
+.bordaCampoInvalido {
+  border-color: red !important;
+}
+
 .button {
   background-color: cadetblue; /* Green */
   border: none;
