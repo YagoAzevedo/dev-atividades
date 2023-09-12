@@ -1,0 +1,89 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color:cadetblue
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body{
+  font-family: Copperplate, Papyrus, fantasy;
+  background-color: rgb(249, 235, 217);
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  color:cadetblue
+}
+h2 {
+  text-align: center;
+  padding: 10px;
+  color:cadetblue
+} 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid cadetblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  border-radius: 2px;
+  background-color: #dddddd;
+  padding: 5px;
+}
+form{
+  text-align:left
+  padding 20px;
+  color:cadetblue
+}
+select {
+  color: #777
+}
+select option{
+  color: black !important;
+}
+input:invalid {
+ border-color: red;
+}
+.bordaCampoInvalido {
+  border-color: red !important;
+}
+
+.button {
+  background-color: cadetblue; /* Green */
+  border: none;
+  color: rgb(172, 216, 218);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 { 
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid #777;
+  width: 250px;
+}
+.button1:hover {
+  background-color:  rgb(249, 235, 217);
+  color: rgb(172, 216, 218);
+  border-color: cadetblue;
+}
+.button:active {
+  background-color: rgb(249, 235, 217);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

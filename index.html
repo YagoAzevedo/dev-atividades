@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Cadastro de Fornecedores</title>
 </head>
 <body>
@@ -19,11 +20,19 @@
             </div>
             <div>
                 <label for="nomePais">País:</label><br>
-                <input type="text" id="nomePais" name="nomePais" placeholder="Digite o Pais"/><br>
+                <select id="nomePais" name="nomePais" required id="nomePais">
+                    <option disabled selected>Selecione o pais</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Brazil">Brazil</option>
+                </select>
             </div>
-            <br>
             <div>
-                <button onclick="cadastrarFornecedor(event)">Cadastrar</button>
+                <button class="button button1" onclick="cadastrarFornecedor(event)">Cadastrar</button>
             </div>
       </form>  
 
@@ -34,6 +43,7 @@
                 <th>Contact</th>
                 <th>Country</th>
         </tr>
+            
         </table>
 </main>
 <script src="./script.js"></script>
