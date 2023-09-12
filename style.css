@@ -48,6 +48,9 @@ form{
 select {
   color: #777
 }
+select option{
+  color: black !important;
+}
 input:invalid {
  border-color: red;
 }
